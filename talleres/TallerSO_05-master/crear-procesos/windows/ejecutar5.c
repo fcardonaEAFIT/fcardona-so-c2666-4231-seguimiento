@@ -9,14 +9,10 @@ _tmain(int argc, TCHAR *argv[]) {
 
   ZeroMemory(&si, sizeof(si));
   si.cb = sizeof(si);
-  si.dwX = 100;
-  si.dwY = 200;
-  si.dwXSize = 500;
-  si.dwYSize = 10; 
   ZeroMemory(&pi, sizeof(pi));
 
   if (!CreateProcessA(NULL,
-		      TEXT("notepad texto.txt"),
+		      TEXT("hello.cmd"),
 		      NULL,
 		      NULL,
 		      FALSE,
